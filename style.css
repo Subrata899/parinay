@@ -1,0 +1,48 @@
+.background{
+	background: url(parinay3.jpg) no-repeat;
+	background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	padding-bottom: 50px;
+}
+img{
+	max-width: 15%;
+	margin: 1.1% 0 0 85%;
+
+}
+.intro{
+	color :white;
+	font-weight: bold;
+	font-size: 3.9vw;
+	margin: 25% 0 0 7%;
+}
+.para{
+	color:red;
+	font-weight:600;
+	font-size:2.5vw;
+	margin:2% 0 2% 22%;
+}
+.intro1{
+	text-align: center;
+	font-size: 2.9vw;
+	color:white;
+	font-weight: bold;
+	margin: 2% 0 3% 0;
+}
+.link{
+	font-size:22px;
+    margin-left: 3%;
+}
+.modal-title{
+   margin-left: 170px;
+}
+.selection{
+ background-color:rgba(0,0,0,0.6);
+ border-radius: 10px;
+ padding: 10px;
+}
+.sel{
+	font-weight: bold;
+	color:white;
+}

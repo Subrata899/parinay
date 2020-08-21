@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<!--external css-->
+	<!-- Bootstrap css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- optional javascript-->
+	<!--jquery first,then popper.js,then Bootstrap js-->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- jquery cdn--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<title>Find ur Partner</title>
+</head>
+<body>
+  
+	<div class="container-fluid p-0">
+    <div class="background">
+	<img src="logo3.png" alt="page logo">
+	<a href="#" data-toggle="modal" data-target="#myModal" class="link">Login <a href="#" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-sign-in" aria-hidden="true"></i>
+        </a> </a>
+	<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Login Now</h4>
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <form action="/action_page.php">
+         <div class="form-group">
+           <label for="email">Email address / Mobile No:</label>
+           <input type="email" class="form-control" placeholder="Enter email" id="email">
+         </div>
+  		<div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+        </div>
+        <div class="form-group form-check">
+         <label class="form-check-label">
+         <input class="form-check-input" type="checkbox"> Remember me
+        </label>
+        <a href="#" class="pl-5">Forget password</a>
+       </div>
+       <div class="text-center">
+         <button type="submit" class="btn btn-primary">Login</button>
+       </div>
+		<div class="text-center mt-3">
+         <span>New to Parinay.com?</span>
+         <a href="#">Sing up Free</a>
+       </div> 
+      </form>
+      </div>
+
+      <!-- Modal footer -->
+      
+    </div>
+  </div>
+</div>
+    <a href="#"data-toggle="modal" data-target="#myModal2" class="link">Register <a href="#"data-toggle="modal" data-target="#myModal2"> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+    <!-- The Modal -->
+<div class="modal fade" id="myModal2">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Register</h4>
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <form action="/action_page.php">
+       	<div class="form-group">
+           <label for="name"> Enter full name:</label>
+           <input type="text" class="form-control" placeholder="Name" id="name">
+         </div>
+         <div class="form-group">
+           <label for="name"> Select Gender:</label>
+         <div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Male
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Female
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Gay
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Lesbian
+  </label>
+</div>
+</div>
+         <div class="form-group">
+           <label for="date of birth"> Select Date of Birth:</label>
+           <input type="date" class="form-control" placeholder="date of birth" id="date of birth">
+         </div>
+         <div class="form-group">
+           <label for="email"> Enter email address / Mobile No:</label>
+           <input type="email" class="form-control" placeholder="Enter email" id="email">
+         </div>
+  		<div class="form-group">
+          <label for="pwd"> Create password:</label>
+          <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+        </div>
+        <div class="form-group form-check">
+         <label class="form-check-label">
+         <input class="form-check-input" type="checkbox"> Save password
+        </label>
+        
+       </div>
+       <div class="text-center">
+         <button type="submit" class="btn btn-primary">Create Account</button>
+       </div>
+		
+      </form>
+      </div>
+
+      <!-- Modal footer -->
+      
+    </div>
+  </div>
+</div>
+    <p class="intro">Searching for your perfect life partner ends here</p>
+    <p class="intro1"> Be happy Make happy</p>
+    <div class="container">
+  <form class="selection"action="/action_page.php">
+   <div class="form-group custom-control custom-control-inline ">
+    <label for="sel1" class=" sel ml-5">I'm looking for a</label>
+  <select class="form-control" id="sel1">
+    <option selected>Woman</option>
+    <option>Man</option>
+    <option>Gay</option>
+    <option>Lesbian</option>
+  </select>
+   	
+   </div>
+    <div class="form-group custom-control custom-control-inline ">
+    <label for="sel2"class=" sel ml-5"> aged</label>&nbsp;
+  <select class="form-control" id="sel2" style="width:4em;">
+    <option selected>18</option>
+    <option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option>
+    <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+    <option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option>
+    <option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option>
+    <option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option>
+    <option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option>
+    <option>55</option><option>56</option><option>57</option><option>58</option><option>59</option><option>60</option>
+    <option>61</option><option>62</option><option>63</option><option>64</option><option>65</option><option>66</option>
+  </select>
+   </div>  
+    
+   	<div class="form-group custom-control custom-control-inline ">
+    <label for="sel3" class="sel">to</label>&nbsp;
+  <select class="form-control" id="sel3"  style="width:4em;">
+    <option selected>18</option>
+    <option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option>
+    <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+    <option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option>
+    <option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option>
+    <option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option>
+    <option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option>
+    <option>55</option><option>56</option><option>57</option><option>58</option><option>59</option><option>60</option>
+    <option>61</option><option>62</option><option>63</option><option>64</option><option>65</option><option>66</option>
+  </select>
+   </div>
+   <div class="form-group custom-control custom-control-inline  ">
+    <label for="sel4"class=" sel ml-5">of religion</label>&nbsp;
+  <select class="form-control" id="sel4"  style="width:8.5em;">
+    <option selected>Select</option>
+    <option>Hindu</option>
+    <option>Muslim</option>
+    <option>Christian</option>
+    <option>Jain</option>
+    <option>Sikh</option>
+    <option>Parsi</option>
+    <option>Buddhist</option>
+    <option>No Religion</option>
+    <option>Spiritual</option>
+    <option>Other</option>
+    
+  </select>
+   </div> 
+  <div class="form-group custom-control custom-control-inline ">
+    <label for="sel5"class=" sel ml-5">and mother language</label>&nbsp;
+  <select class="form-control" id="sel5"  style="width:7.5em;">
+    <option selected>Select</option>
+    <option>Bengali</option>
+    <option>Hindi</option>
+    <option>Marathi</option>
+    <option>Udiya</option>
+    <option>Punjabi</option>
+    <option>Gujrati</option>
+    <option>Urdu</option>
+    <option>Telegu</option>
+    <option>Tamil</option>
+    <option>Marwari</option>
+    
+  </select> 
+  <button type="submit" class="btn btn-primary ml-5">Find Now</button>
+   </div> 
+   </form>      
+    </div>
+    </div>
+ </div> 
+  <div class="container"> 
+    <p class="para">Meet him/her who is waiting only for you</p>
+  </div>
+  <div class="container">
+   <div class="card-deck">
+  <div class="card bg-primary">
+    <div class="card-body text-center">
+      <h4 class="card-title">Sign up</h4>
+      <p class="card-text">Register for free & put up your Profile</p>
+    </div>
+  </div>
+  <div class="card bg-warning">
+    <div class="card-body text-center">
+      <h4 class="card-title">Connect</h4>
+      <p class="card-text">Select & Connect with Matches you like</p>
+    </div>
+  </div>
+  <div class="card bg-success">
+    <div class="card-body text-center">
+      <h4 class="card-title">Interact</h4>
+      <p class="card-text">Become a Premium Member & Start a Conversation</p>
+    </div>
+  </div>
+  
+</div>
+ 
+  </div>
+    
+</body>
+</html>
