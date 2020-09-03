@@ -6,15 +6,15 @@
 	<link rel="stylesheet" href="style.css">
 	<!--external css-->
 	<!-- Bootstrap css-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!-- Font Awesome CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<!-- optional javascript-->
 	<!--jquery first,then popper.js,then Bootstrap js-->
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	<!-- jquery cdn--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,7 +25,7 @@
   
 	<div class="container-fluid p-0">
     <div class="background">
-	<img src="logo3.png" alt="page logo">
+	<img class="img1" src="logo3.png" alt="page logo">
 	<a href="#" data-toggle="modal" data-target="#myModal" class="link">Login <a href="#" data-toggle="modal" data-target="#myModal">
           <i class="fa fa-sign-in" aria-hidden="true"></i>
         </a> </a>
@@ -218,7 +218,6 @@
     <option>Telegu</option>
     <option>Tamil</option>
     <option>Marwari</option>
-    
   </select> 
   <button type="submit" class="btn btn-primary ml-5">Find Now</button>
    </div> 
@@ -229,30 +228,147 @@
   <div class="container"> 
     <p class="para">Meet him/her who is waiting only for you</p>
   </div>
+
   <div class="container">
    <div class="card-deck">
-  <div class="card bg-primary">
+  <div class="card bg-light">
+    <img class="card-img-top" src="pic1.jpg" alt="Card image">
     <div class="card-body text-center">
-      <h4 class="card-title">Sign up</h4>
+      <a href="#"><h4 class="card-title">Sign up</h4></a>
       <p class="card-text">Register for free & put up your Profile</p>
     </div>
   </div>
-  <div class="card bg-warning">
+  <div class="card bg-light">
+    <img class="card-img-top" src="pic2.jpg" alt="Card image">
     <div class="card-body text-center">
-      <h4 class="card-title">Connect</h4>
+      <a href="#"><h4 class="card-title">Connect</h4></a>
       <p class="card-text">Select & Connect with Matches you like</p>
     </div>
   </div>
-  <div class="card bg-success">
+  <div class="card bg-light">
+    <img class="card-img-top" src="pic4.jpg" alt="Card image">
     <div class="card-body text-center">
-      <h4 class="card-title">Interact</h4>
+      <a href="#"><h4 class="card-title">Interect</h4></a>
       <p class="card-text">Become a Premium Member & Start a Conversation</p>
     </div>
   </div>
-  
 </div>
- 
+ </div>
+  <div>
+    <p class="para2"> Let us make your story like these</p>
   </div>
-    
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+   <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ol>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+      <img src="mar1.jpg" alt="Los Angeles" class="img-fluid mx-auto d-block" style="height:300px">
+    <div><h4> Sayan & Tania </h4>We met over Parinay.com, started discussing our likes-dislikes through the Chat Box here on Parinay.com. This went for about two days and then we exchanged our contact no's and started chatting through Whatsapp, shared our bio-data & some pictures with eachother to share it with the family....both the families agreed to continue. </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <img src="mar2.jpg" alt="Chicago"class="img-fluid mx-auto d-block" style="height:300px">
+       <div><h4>Harekrishna & Madhubala</h4>Thanks to Parinay for helping me to weave a dream love story. Our journey started from the Parinay Chatbox to Whatsapp formal messages to becoming friends to phones, video calls to being best friends to becoming soulmates and finally meeting each other to hold our hands forever.</div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <img src="mar3.jpg" alt="New York" class="img-fluid mx-auto d-block" style="height:300px">
+        <div><h4>Koustav & Radha</h4>We met at her home on 24th July. We been connected through Shaadi.com since last 4 months. I feel she is a perfect match for me. And now i am happy to close Parinay.com account and delete this App.</div>
+    </div>
+  </div>
+</div>
+
+   <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+      <img src="mar4.jpg" alt="Los Angeles" class="img-fluid mx-auto d-block" style="height: 300px">
+       <div><h4>Soumalaya & Dipannita</h4>It all started with a request that I received on Parinay.com from Mac.Our formal conversation started through whatsapp. When I met him for the first time he made me believe in Love at first sight. We didnt recognized when our formal conversations turned into love. Everything is just the way I have imagined my love story would be..</div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <img src="mar5.jpg" alt="Chicago" class="img-fluid mx-auto d-block" style="height: 300px">
+        <div><h4>Subrata & Rupkotha</h4>We first came in contact through Parinay.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life.</div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <img src="mar6.jpg" alt="New York" class="img-fluid mx-auto d-block" style="height: 300px">
+       <div><h4>Goutam & Pinki</h4>Thank you so much our Dear MATCH MAKER PARINAY.COM for bringing us together"Beyond that silver lining of clouds, that twinkling of million stars, Beyond that golden warm sun, There is someone who answers our prayers......"Though we both strongly believe that BIRTH, MARRIAGE and DEATH are pre-estined, there is always a medium which helps us to reach out to the right person at the right time.</div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon bg-success"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon bg-success"></span>
+  </a>
+</div>
+ </div>
+ </div> 
+ </div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(".hide").mouseenter(function(){
+    $(".show").show();
+  });
+  $(".hide").mouseout(function(){
+    $(".show").hide();
+  });
+
+  $(".hide1").mouseenter(function(){
+    $(".show1").show();
+
+  });
+  $(".hide1").mouseout(function(){
+    $(".show1").hide();
+
+  });
+
+  $(".hide2").mouseenter(function(){
+    $(".show2").show();
+
+  });
+  $(".hide2").mouseout(function(){
+    $(".show2").hide();
+
+  });
+  $(".hide3").mouseenter(function(){
+    $(".show3").show();
+
+  });
+  $(".hide3").mouseout(function(){
+    $(".show3").hide();
+
+  });
+  $(".hide4").mouseenter(function(){
+    $(".show4").show();
+
+  });
+  $(".hide4").mouseout(function(){
+    $(".show4").hide();
+
+  });
+  $(".hide5").mouseenter(function(){
+    $(".show5").show();
+
+  });
+  $(".hide5").mouseout(function(){
+    $(".show5").hide();
+
+  });
+}); 
+</script>
 </body>
 </html>

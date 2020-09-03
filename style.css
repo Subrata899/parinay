@@ -1,12 +1,12 @@
 .background{
-	background: url(parinay3.jpg) no-repeat;
+	background: url(parinay2.jpg) no-repeat center center fixed;
 	background-size: cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	padding-bottom: 50px;
 }
-img{
+.img1{
 	max-width: 15%;
 	margin: 1.1% 0 0 85%;
 
@@ -22,6 +22,12 @@ img{
 	font-weight:600;
 	font-size:2.5vw;
 	margin:2% 0 2% 22%;
+}
+.para2{
+	color:red;
+	font-weight:600;
+	font-size:2.5vw;
+	margin:3% 0 2% 29%;
 }
 .intro1{
 	text-align: center;
@@ -46,3 +52,7 @@ img{
 	font-weight: bold;
 	color:white;
 }
+/*.show,.show1,.show2,.show3,.show4,.show5{
+ display: none;	
+}
+*/
