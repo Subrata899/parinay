@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<!--external css-->
-	<!-- Bootstrap css-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<!-- Font Awesome CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <!--external css-->
+  <!-- Bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<!-- optional javascript-->
-	<!--jquery first,then popper.js,then Bootstrap js-->
+  <!-- optional javascript-->
+  <!--jquery first,then popper.js,then Bootstrap js-->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-	<!-- jquery cdn--> 
+  <!-- jquery cdn--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<title>Find ur Partner</title>
+    <!-- animate.css plugin -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+     <!-- Aos animation cdn -->
+      <!--css -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- js  -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Find ur Partner</title>
 </head>
 <body>
   
-	<div class="container-fluid p-0">
+  <div class="container-fluid p-0">
     <div class="background">
-	<img class="img1" src="logo3.png" alt="page logo">
-	<a href="#" data-toggle="modal" data-target="#myModal" class="link">Login <a href="#" data-toggle="modal" data-target="#myModal">
+  <a href="#"><img class="img1" src="logo3.png" alt="page logo"></a>
+  <a href="#" data-toggle="modal" data-target="#myModal" class="link" style="text-decoration: none">Login <a href="#" data-toggle="modal" data-target="#myModal">
           <i class="fa fa-sign-in" aria-hidden="true"></i>
         </a> </a>
-	<!-- The Modal -->
+  <!-- The Modal -->
 <div class="modal fade" id="myModal">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content">
@@ -47,7 +53,7 @@
            <label for="email">Email address / Mobile No:</label>
            <input type="email" class="form-control" placeholder="Enter email" id="email">
          </div>
-  		<div class="form-group">
+      <div class="form-group">
           <label for="pwd">Password:</label>
           <input type="password" class="form-control" placeholder="Enter password" id="pwd">
         </div>
@@ -60,7 +66,7 @@
        <div class="text-center">
          <button type="submit" class="btn btn-primary">Login</button>
        </div>
-		<div class="text-center mt-3">
+    <div class="text-center mt-3">
          <span>New to Parinay.com?</span>
          <a href="#">Sing up Free</a>
        </div> 
@@ -72,7 +78,7 @@
     </div>
   </div>
 </div>
-    <a href="#"data-toggle="modal" data-target="#myModal2" class="link">Register <a href="#"data-toggle="modal" data-target="#myModal2"> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+    <a href="#"data-toggle="modal" data-target="#myModal2" class="link" style="text-decoration: none">Register <a href="#"data-toggle="modal" data-target="#myModal2"> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
     <!-- The Modal -->
 <div class="modal fade" id="myModal2">
   <div class="modal-dialog modal-dialog-centered ">
@@ -87,7 +93,7 @@
       <!-- Modal body -->
       <div class="modal-body">
        <form action="/action_page.php">
-       	<div class="form-group">
+        <div class="form-group">
            <label for="name"> Enter full name:</label>
            <input type="text" class="form-control" placeholder="Name" id="name">
          </div>
@@ -122,7 +128,7 @@
            <label for="email"> Enter email address / Mobile No:</label>
            <input type="email" class="form-control" placeholder="Enter email" id="email">
          </div>
-  		<div class="form-group">
+      <div class="form-group">
           <label for="pwd"> Create password:</label>
           <input type="password" class="form-control" placeholder="Enter password" id="pwd">
         </div>
@@ -135,7 +141,7 @@
        <div class="text-center">
          <button type="submit" class="btn btn-primary">Create Account</button>
        </div>
-		
+    
       </form>
       </div>
 
@@ -144,8 +150,8 @@
     </div>
   </div>
 </div>
-    <p class="intro">Searching for your perfect life partner ends here</p>
-    <p class="intro1"> Be happy Make happy</p>
+    <p class=" text-center intro">Searching for your perfect life partner ends here</p>
+    <p class=" text-center intro1"> Be happy Make happy</p>
     <div class="container">
   <form class="selection"action="/action_page.php">
    <div class="form-group custom-control custom-control-inline ">
@@ -156,7 +162,7 @@
     <option>Gay</option>
     <option>Lesbian</option>
   </select>
-   	
+    
    </div>
     <div class="form-group custom-control custom-control-inline ">
     <label for="sel2"class=" sel ml-5"> aged</label>&nbsp;
@@ -173,7 +179,7 @@
   </select>
    </div>  
     
-   	<div class="form-group custom-control custom-control-inline ">
+    <div class="form-group custom-control custom-control-inline ">
     <label for="sel3" class="sel">to</label>&nbsp;
   <select class="form-control" id="sel3"  style="width:4em;">
     <option selected>18</option>
@@ -225,27 +231,27 @@
     </div>
     </div>
  </div> 
-  <div class="container"> 
-    <p class="para">Meet him/her who is waiting only for you</p>
+  <div class="jumbotron mt-3" id="jumbo1">
+    <p class="text-center para ">Meet him/her who is waiting only for you</p>
   </div>
 
   <div class="container">
    <div class="card-deck">
-  <div class="card bg-light">
+  <div data-aos="zoom-in-right" data-aos-duration="3000" class="card bg-light">
     <img class="card-img-top" src="pic1.jpg" alt="Card image">
     <div class="card-body text-center">
       <a href="#"><h4 class="card-title">Sign up</h4></a>
       <p class="card-text">Register for free & put up your Profile</p>
     </div>
   </div>
-  <div class="card bg-light">
+  <div data-aos="zoom-in-up" data-aos-duration="3000" class="card bg-light">
     <img class="card-img-top" src="pic2.jpg" alt="Card image">
     <div class="card-body text-center">
       <a href="#"><h4 class="card-title">Connect</h4></a>
       <p class="card-text">Select & Connect with Matches you like</p>
     </div>
   </div>
-  <div class="card bg-light">
+  <div data-aos="zoom-in-left" data-aos-duration="3000" class="card bg-light">
     <img class="card-img-top" src="pic4.jpg" alt="Card image">
     <div class="card-body text-center">
       <a href="#"><h4 class="card-title">Interect</h4></a>
@@ -254,8 +260,8 @@
   </div>
 </div>
  </div>
-  <div>
-    <p class="para2"> Let us make your story like these</p>
+  <div class="jumbotron mt-3" id="jumbo">
+    <marquee behavior="scroll" direction="right" scrollamount="12"class="para2"> Let us make your story like these</marquee>
   </div>
  
   <div class="container">
@@ -271,12 +277,12 @@
   
   <!-- The slideshow -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active ">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
       <img src="mar1.jpg" alt="Los Angeles" class="img-fluid mx-auto d-block" style="height:300px">
-    <div><h4> Sayan & Tania </h4>We met over Parinay.com, started discussing our likes-dislikes through the Chat Box here on Parinay.com. This went for about two days and then we exchanged our contact no's and started chatting through Whatsapp, shared our bio-data & some pictures with eachother to share it with the family....both the families agreed to continue. </div>
-    </div>
+      <div><h4> Sayan & Tania </h4>We met over Parinay.com, started discussing our likes-dislikes through the Chat Box here on Parinay.com. This went for about two days and then we exchanged our contact no's and started chatting through Whatsapp, shared our bio-data & some pictures with eachother to share it with the family....both the families agreed to continue. </div>
+  </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
       <img src="mar2.jpg" alt="Chicago"class="img-fluid mx-auto d-block" style="height:300px">
        <div><h4>Harekrishna & Madhubala</h4>Thanks to Parinay for helping me to weave a dream love story. Our journey started from the Parinay Chatbox to Whatsapp formal messages to becoming friends to phones, video calls to being best friends to becoming soulmates and finally meeting each other to hold our hands forever.</div>
@@ -296,11 +302,11 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
       <img src="mar5.jpg" alt="Chicago" class="img-fluid mx-auto d-block" style="height: 300px">
-        <div><h4>Subrata & Rupkotha</h4>We first came in contact through Parinay.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life.</div>
+        <div ><h4>Subrata & Rupkotha</h4>We first came in contact through Parinay.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life.</div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
       <img src="mar6.jpg" alt="New York" class="img-fluid mx-auto d-block" style="height: 300px">
-       <div><h4>Goutam & Pinki</h4>Thank you so much our Dear MATCH MAKER PARINAY.COM for bringing us together"Beyond that silver lining of clouds, that twinkling of million stars, Beyond that golden warm sun, There is someone who answers our prayers......"Though we both strongly believe that BIRTH, MARRIAGE and DEATH are pre-estined, there is always a medium which helps us to reach out to the right person at the right time.</div>
+       <div ><h4>Goutam & Pinki</h4>Thank you so much our Dear MATCH MAKER PARINAY.COM for bringing us together"Beyond that silver lining of clouds, that twinkling of million stars, Beyond that golden warm sun, There is someone who answers our prayers......"Though we both strongly believe that BIRTH, MARRIAGE and DEATH are pre-estined, there is always a medium which helps us to reach out to the right person at the right time.</div>
     </div>
   </div>
 </div>
@@ -317,58 +323,47 @@
  </div>
  </div> 
  </div>
+  <div class="jumbotron jumbotron-fluid bg-info mb-0 mt-4">
+  <div class="container">
+    <h1 class="text-center">About Parinay.com</h1>      
+     <p> Parinay.com is one of India’s leading matrimonial websites that has helped lakhs of members find their perfect life partner.</p>
+
+<p>We believe choosing a life partner is a big and important decision, and hence work towards giving a simple and secure matchmaking experience for you and your family. Each profile registered with us goes through a manual screening process before going live on site; we provide superior privacy controls for Free; and also verify contact information of members.</p>
+
+<p>You can register for Free and search according to your specific criteria on age, height, community, profession, income, location and much more- on your computer, tablet or mobile. Regular custom mails and notifications make the process easier and take you closer to your Jeevansathi!</p>
+  </div>
+</div>
+ <div class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+   <i class="fa fa-lock fa-3x text-danger " aria-hidden="true"></i> <span class="text-danger font-weight-bold ml-2 icontext">100% Privacy</span>
+   <i class="fa fa-users fa-3x text-danger ml-5 " aria-hidden="true"></i> <span class="text-danger font-weight-bold ml-2 icontext">Best Matches</span>
+   <i class="fa fa-heart fa-3x text-danger ml-5" aria-hidden="true"></i> <span class="text-danger font-weight-bold ml-2 icontext">Max Response</span> 
+  </div>
+  <div class="container mt-5 clearfix">
+    <span class="text-left">&copy 2004-2020 Parinay.com, The World's No.1 Matchmaking Service<sup>TM</sup></span>
+    <a class="fa fa-youtube fa-2x pull-right ml-5" aria-hidden="true" href="#" style="text-decoration: none"></a>
+    <a class="fa fa-twitter fa-2x pull-right ml-5" aria-hidden="true" href="#" style="text-decoration: none"></a>
+    <a class="fa fa-facebook fa-2x pull-right" aria-hidden="true" href="#" style="text-decoration: none"></a>
+  </div>
+</div>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-  $(".hide").mouseenter(function(){
-    $(".show").show();
-  });
-  $(".hide").mouseout(function(){
-    $(".show").hide();
-  });
+  /*$(document).ready(function(){
+    $(window).scroll(function(){
+      let positiontop=$(document).scrollTop();
+      console.log(positiontop);
 
-  $(".hide1").mouseenter(function(){
-    $(".show1").show();
+      if((positiontop>730) && (positiontop<794)){
+        $('#jumbo1').addClass('animate__animated animate__swing');
+      }
 
-  });
-  $(".hide1").mouseout(function(){
-    $(".show1").hide();
-
-  });
-
-  $(".hide2").mouseenter(function(){
-    $(".show2").show();
-
-  });
-  $(".hide2").mouseout(function(){
-    $(".show2").hide();
-
-  });
-  $(".hide3").mouseenter(function(){
-    $(".show3").show();
-
-  });
-  $(".hide3").mouseout(function(){
-    $(".show3").hide();
-
-  });
-  $(".hide4").mouseenter(function(){
-    $(".show4").show();
-
-  });
-  $(".hide4").mouseout(function(){
-    $(".show4").hide();
-
-  });
-  $(".hide5").mouseenter(function(){
-    $(".show5").show();
-
-  });
-  $(".hide5").mouseout(function(){
-    $(".show5").hide();
-
-  });
-}); 
+    });
+  }); */ 
 </script>
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
